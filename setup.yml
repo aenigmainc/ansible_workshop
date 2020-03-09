@@ -68,7 +68,7 @@
       super_user_security: none
       <<: *input
   - name: Add SSHPASS local
-    package:
+    dnf:
       name: sshpass
       state: present
     become: yes
