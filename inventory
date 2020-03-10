@@ -1,4 +1,4 @@
-[all:vars]
+[linux_nodes:vars]
 ansible_user=root
 ansible_ssh_pass=Netapp1!
 ansible_port=22
