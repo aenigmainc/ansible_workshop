@@ -18,7 +18,7 @@ dc1 ansible_host=dc1.demo.netapp.com ansible_connection=winrm ansible_winrm_serv
 rhel5 ansible_host=rhel5.demo.netapp.com
 
 [ontap]
-cluster1 ansible_host=cluster1.demo.netapp.com shortname=cluster1
+cluster1 ansible_host=cluster1.demo.netapp.com shortname=cluster1 ansible_user=admin
 
 
 [elementsw]
