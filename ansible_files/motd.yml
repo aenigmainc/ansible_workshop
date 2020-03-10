@@ -1,6 +1,6 @@
 ---
 - name: Set the Message of the Day
-  hosts: ontap
+  hosts: svm
   collections:
     - netapp.ontap
   gather_facts: false
