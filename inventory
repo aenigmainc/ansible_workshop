@@ -5,7 +5,6 @@ ansible_port=22
 ansible_connection=ssh
 
 [linux_nodes]
-
 rhel1 ansible_host=rhel1.demo.netapp.com 
 rhel2 ansible_host=rhel2.demo.netapp.com 
 rhel3 ansible_host=rhel3.demo.netapp.com 
@@ -37,14 +36,6 @@ rhel3
 
 [windows_nodes]
 dc1
-
-[linux_nodes]
-rhel1
-rhel2
-rhel3
-rhel4
-rhel5
-rhel6
 
 [all_nodes:children]
 linux_nodes
