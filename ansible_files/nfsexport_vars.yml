@@ -1,7 +1,5 @@
 ---
 - hosts: localhost
-  collections:
-    - netapp.ontap
   gather_facts: false
   name: Setup NFS Export
   tasks:
