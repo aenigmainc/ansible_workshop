@@ -67,12 +67,7 @@
       rw_rule: none
       super_user_security: none
       <<: *input
-  - name: Add SSHPASS local
-    dnf:
-      name: sshpass
-      state: present
-    become: yes
-  - name: Copy Ansible config file
+   - name: Copy Ansible config file
     copy:
       src: .ansible.cfg
       dest: /home/root/.ansible.cfg
