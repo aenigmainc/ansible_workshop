@@ -6,7 +6,7 @@
   - name: Verifying the MOTD
     na_ontap_motd:
       state: present
-      message: Set by Ansible
+      motd_message: Set by Ansible
       vserver: "{{ shortname }}"
       hostname: "{{ inventory_hostname }}"
       username: admin
