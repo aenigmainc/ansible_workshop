@@ -18,11 +18,11 @@ dc1 ansible_host=dc1.demo.netapp.com ansible_connection=winrm ansible_winrm_serv
 rhel5 ansible_host=rhel5.demo.netapp.com
 
 [ontap]
-cluster1.demo.netapp.com shortname=clus1
+192.168.0.101 ansible_host=cluster1.demo.netapp.com shortname=clus1
 
 
 [elementsw]
-sf1 ansible_host=sf1.demo.netapp.com
+192.168.0.102 ansible_host=sf1.demo.netapp.com
 
 [docker_nodes]
 rhel4
