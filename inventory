@@ -12,7 +12,7 @@ rhel4 ansible_host=rhel4.demo.netapp.com
 rhel6 ansible_host=rhel6.demo.netapp.com
 
 [windows_nodes]
-dc1 ansible_host=dc1.demo.netapp.com ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_user=administrator ansible_password=Netapp1!
+dc1 ansible_host=dc1.demo.netapp.com ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_port=5986 ansible_user=administrator ansible_password=Netapp1!
 
 [control]
 rhel5 ansible_host=rhel5.demo.netapp.com
