@@ -70,6 +70,6 @@
   - name: Copy Ansible config file
     copy:
       src: .ansible.cfg
-      dest: /home/root/.ansible.cfg
+      dest: /root/.ansible.cfg
       owner: ansible
       group: ansible
