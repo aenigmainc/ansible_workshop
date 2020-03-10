@@ -38,8 +38,8 @@ rhel3
 dc1
 
 [svm]
-ansible_vserver
-svm1
+192.168.0.101 shortname=ansible_vserver
+192.168.0.101 shortname=svm1
 
 [all_nodes:children]
 linux_nodes
