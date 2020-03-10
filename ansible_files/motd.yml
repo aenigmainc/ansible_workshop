@@ -1,8 +1,6 @@
 ---
 - name: Set the Message of the Day
   hosts: svm
-  collections:
-    - netapp.ontap
   gather_facts: false
   tasks:
   - name: Verifying the MOTD
