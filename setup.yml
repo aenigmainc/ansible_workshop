@@ -1,7 +1,5 @@
 ---
 - hosts: localhost
-  collections:
-    - netapp.ontap
   vars:
     ansible_become_password: Netapp1!
     input: &input
