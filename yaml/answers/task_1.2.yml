@@ -1,0 +1,11 @@
+# Update the task_1.yml file to add a list of Vegetables - Carrot, Tomato, Cucumber
+
+Fruits:
+  - Apple
+  - Banana
+  - Orange
+
+Vegetables:
+  - Carrot
+  - Tomato
+  - Cucumber

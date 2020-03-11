@@ -1,0 +1,20 @@
+1.	In the default how many stooges do we have, and what is/are their name(s).
+A:	3 stooges.  Larry, Moe, Curly
+
+2.	In the default what is the URL for the stooges.
+A:	stooges.com
+
+3.	In development how many stooges are there, and what is/are their name(s).
+A:	1 stooge. Shemp
+
+4.	In development what is the URL for the stooges.
+A:	stooges.local
+
+5.	In test how many stooges are there, and what is/are their name(s).
+A:	4 stooges.  Larry, Moe, Curly, Shemp
+
+6.	In test what is the URL for the stooges.
+A:	test.stooges.qa
+
+7.	Modify the task_1.7.yml file so no pies get thrown in test.
+A:	look at the task_1.7.yml file in the YAML/Answers folder
