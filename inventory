@@ -4,6 +4,12 @@ ansible_ssh_pass=Netapp1!
 ansible_port=22
 ansible_connection=ssh
 
+[control:vars]
+ansible_user=root
+ansible_ssh_pass=Netapp1!
+ansible_port=22
+ansible_connection=ssh
+
 [ontap:vars]
 ansible_user=admin
 ansible_ssh_pass=Netapp1!
