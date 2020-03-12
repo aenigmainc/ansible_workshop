@@ -1,0 +1,35 @@
+---
+  - hosts: localhost
+    vars:
+      hostname: sf1
+      username: admin
+	  password: Netapp1!
+      volname: AnsibleVol
+      account: ansibleAccount
+      size_gb: 10
+      min: 1000
+      max: 2000
+      burst: 3000
+      state: present
+    tasks:
+    - name: Account Create
+	  na_elementsw_account:
+	    hostname: "{{ hostname }}"
+		username: "{{ username }}"
+		password: "{{ password }}"
+		state: "{{ state }}"
+		element_username: "{{ account }}"
+		initiator_secret: Netapp1!Netapp1!
+		target_secret: Netapp1!Netapp1!
+	- name: Volume Create
+      na_elementsw_volume:
+        hostname: "{{ hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        state: "{{ state }}"
+        name: "{{ volname }}"
+        qos: {minIOPS: "{{ min }}", maxIOPS: "{{ max }}", burstIOPS: "{{burst }}"}
+        account_id: "{{ account }}"
+        size: "{{ size_gb }}"
+        size_unit: gb
+        enable512e: True
