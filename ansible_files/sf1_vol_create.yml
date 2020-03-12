@@ -3,7 +3,7 @@
     vars:
       hostname: sf1
       username: admin
-	  password: Netapp1!
+      password: Netapp1!
       volname: AnsibleVol
       account: ansibleAccount
       size_gb: 10
@@ -13,15 +13,15 @@
       state: present
     tasks:
     - name: Account Create
-	  na_elementsw_account:
-	    hostname: "{{ hostname }}"
-		username: "{{ username }}"
-		password: "{{ password }}"
-		state: "{{ state }}"
-		element_username: "{{ account }}"
-		initiator_secret: Netapp1!Netapp1!
-		target_secret: Netapp1!Netapp1!
-	- name: Volume Create
+        na_elementsw_account:
+        hostname: "{{ hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        state: "{{ state }}"
+        element_username: "{{ account }}"
+        initiator_secret: Netapp1!Netapp1!
+        target_secret: Netapp1!Netapp1!
+    - name: Volume Create
       na_elementsw_volume:
         hostname: "{{ hostname }}"
         username: "{{ username }}"
