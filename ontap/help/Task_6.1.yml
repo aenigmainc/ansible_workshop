@@ -1,0 +1,12 @@
+---
+
+- hosts: rhel5
+  
+
+  tasks:
+  - name: Mount nfs export 
+    mount: 
+      state: mounted 
+      path: /mnt/ansiblevol1 
+      src: 192.168.0.142:/ansiblevol1  
+      fstype: nfs  

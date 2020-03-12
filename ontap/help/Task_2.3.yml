@@ -1,0 +1,30 @@
+---
+- hosts: localhost
+  name: LIF Action
+  vars:
+    hostname: 192.168.0.101
+    username: admin
+    password: Netapp1!
+    vserver: svm1  
+    address: 192.168.0.142
+  tasks:
+  - name: Create interface
+    na_ontap_interface:
+      state: absent
+      interface_name: "{{ vserver }}_ansible_data_mgmt_lif1"
+      home_port: e0d
+      home_node: cluster1-01
+      role: data
+      protocols: nfs
+      admin_status: up
+      failover_policy: local-only
+      firewall_policy: data
+      is_auto_revert: true
+      address: "{{ address }}"
+      netmask: 255.255.255.0
+      vserver: "{{ vserver }}"
+      hostname: "{{ hostname }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+      https: true
+      validate_certs: false

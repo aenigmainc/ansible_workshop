@@ -1,0 +1,8 @@
+hostname: 192.168.0.101
+username: admin
+password: Netapp1!
+vserver: ansibleSVM
+aggr: aggr1
+vol_name: ansiblevol1
+address: 192.168.0.142
+data_policy: data_export_policy
