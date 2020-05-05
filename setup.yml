@@ -21,6 +21,7 @@
     loop:
       - aggr1
       - aggr2
+    ignore_errors: yes
   - name: Create SVM
     na_ontap_svm:
       state: present
